@@ -9,15 +9,18 @@ def div(a , b):
 try:
     print("Choose an operation")
     print("add , subtract, multiply, divide")
-    ope = int(input("enter a operator"))
+    ope = str(input("enter a operator"))
+    print("enter value")
+    a = int(input("Enter first number"))
+    b = int(input("Enter second number"))
     if ope == "add":
-        add()
+        add(a, b)
     elif ope == "subtract":
-        subtract()
+        subtract(a, b)
     elif ope == "multiply":
-        multiply()
+        multiply(a, b)
     elif ope == "divide":
-        div()
+        div(a, b)
         
 except ValueError as e:
     print(e)
